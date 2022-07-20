@@ -41,6 +41,7 @@ public class PlayerMovement : MonoBehaviour {
 
     //Dashing
     private float dashForce = 50f;
+    private float dashCount = 2f;
 
     //Input
     float x, y;
@@ -83,9 +84,16 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetMouseButtonDown(1)) {
         Dash();
     }
+        if(grounded){
+            dashCount = 2;
+        }
 
     void Dash() {
-        rb.AddForce( orientation.transform.forward * dashForce, ForceMode.Impulse );
+        if(dashCount > 0){
+            rb.AddForce( orientation.transform.forward * dashForce, ForceMode.Impulse );
+            dashCount -= 1;
+        }
+        
     }
 
        
