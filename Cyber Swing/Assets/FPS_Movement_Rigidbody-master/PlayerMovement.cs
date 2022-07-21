@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour {
         crouching = Input.GetKey(KeyCode.LeftControl);
       
     //dashing
-        if (Input.GetMouseButtonDown(1)) {
+        if (Input.GetMouseButtonDown(1) | Input.GetKeyDown(KeyCode.LeftShift)) {
         Dash();
         
         if(dashCount == 1){

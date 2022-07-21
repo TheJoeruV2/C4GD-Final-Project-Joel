@@ -2534,7 +2534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Dash: RightClick
+  m_text: 'Dash: RightClick/Left Shift
 
     You can only dash twice in midair'
   m_isRightToLeft: 0
@@ -4417,6 +4417,7 @@ MonoBehaviour:
   DashBarL: {fileID: 206872564}
   DashBarR: {fileID: 990061994}
   NotUsed: {r: 1, g: 1, b: 1, a: 0}
+  Used: {r: 0, g: 0, b: 0, a: 0}
   moveSpeed: 4500
   maxSpeed: 20
   grounded: 0
